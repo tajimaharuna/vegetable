@@ -18,7 +18,7 @@ class NewsController extends Controller
           $posts = News::where('title', $cond_title)->orderBy('created_at','desc')->get();
         }else {
           // それ以外はすべてのニュースを取得する
-          $posts = News::orderBy('created_at','desc')->paginate(5);
+          $posts = News::orderBy('created_at','desc')->get();
         }
 
         if(count($posts) > 0){

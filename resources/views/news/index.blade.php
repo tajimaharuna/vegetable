@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="container">
-        <h2>お野菜豆知識！</h2>
+        <h2>お野菜豆知識！！！</h2>
         　<hr color="#c0c0c0">
             <div class="col-md-8">
                 <form action="{{ action('NewsController@index') }}" method="get">
@@ -74,7 +74,6 @@
                 @endforeach
             </div>
         </div>
-        <div class="d-flex justify-content-center">{{ $posts->links() }}</div>
     </div>
     </div>
 @endsection

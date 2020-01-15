@@ -40,8 +40,8 @@
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
 			         　<ul class="nav navbar-link">
-				        <li><a class="aa" href="https://3d611f28d94a4240a86127f61c1a22dc.vfs.cloud9.us-east-2.amazonaws.com/admin/news">編集画面一覧</a></li>
-                        <li><a class="aa" href="https://3d611f28d94a4240a86127f61c1a22dc.vfs.cloud9.us-east-2.amazonaws.com/admin/news/create">新規作成</a></li>
+				        <li><a class="aa" href="/admin/news">編集画面一覧</a></li>
+                        <li><a class="aa" href="/admin/news/create">新規作成</a></li>
                        </ul>
                         
                         <!-- Left Side Of Navbar -->

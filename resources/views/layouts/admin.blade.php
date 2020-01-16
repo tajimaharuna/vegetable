@@ -40,7 +40,7 @@
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
 			         　<ul class="nav navbar-link">
-				        <li><a class="aa" href="/admin/news">編集画面一覧</a></li>
+				        <li><a class="aa" href="/admin/news">投稿一覧</a></li>
                         <li><a class="aa" href="/admin/news/create">新規作成</a></li>
                        </ul>
                         

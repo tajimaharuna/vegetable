@@ -45,7 +45,7 @@
                         <ul class="nuvbar-nav ml-auto">
                         @guest
                             <li><a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a></li>
-                {{-- ログインしていたらユーザー名とログアウトボタンを表示 --}}
+                {{-- ログインしていたらユーザー名とログアウ���ボタンを表示 --}}
                             @else
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
@@ -80,7 +80,9 @@
       <a class="fab fa-twitter" href="javascript:window.open('http://twitter.com/share?text='+encodeURIComponent(document.title)+'&url='+encodeURIComponent(location.href),'sharewindow','width=550, height=450, personalbar=0, toolbar=0, scrollbars=1, resizable=!');">Tweet</a>
       <a class="fab fa-facebook" href="javascript:window.open('http://www.facebook.com/sharer.php?u='+encodeURIComponent(location.href),'sharewindow','width=550, height=450, personalbar=0, toolbar=0, scrollbars=1, resizable=!');">Facebook</a>
       <a class="fab fa-line" href="javascript:window.open('http://line.me/R/msg/text/?'+encodeURIComponent(document.title)+'%20'+encodeURIComponent(location.href),'sharewindow','width=550, height=450, personalbar=0, toolbar=0, scrollbars=1, resizable=!');">LINE</a>
-      <a href="https://twitter.com/intent/tweet?text={text}&url={url}&hashtags={hashtags}?" onclick="window.open(this.href,'TWwindow','width=650,height=450,menubar=no,toolbar=no,scrollbars=yes');return false;">ボタンに表示されるテキスト</a>
+      
+      <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=%E3%81%93%E3%82%93%E3%81%AB%E3%81%A1%E3%81%AF&url=https%3A%2F%2Fkimulog.com%2F&hashtags=matome,vegetable,share?" onclick="window.open(this.href,'TWwindow','width=650,height=450,menubar=no,toolbar=no,scrollbars=yes');return false;">Twitter</a>
+      <a class="facebook-share-button" href="http://www.facebook.com/share.php?u=https%3A%2F%2Fkimulog.com%2F" onclick="window.open(this.href,'FBwindow','width=650, height=450, menubar=no, toolbar=no, scrollbars=yes');return false;">Facebook</a>
 
       </ul>
       </div>

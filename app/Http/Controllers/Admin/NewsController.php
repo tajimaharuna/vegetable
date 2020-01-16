@@ -18,7 +18,7 @@ class NewsController extends Controller
   
     public function create(Request $request)
     {
-        // Varidationを行う
+    // 新規作成ページ情報をDBに保存
       $this->validate($request, News::$rules);
       $news = new News;
       $form = $request->all();
@@ -41,6 +41,7 @@ class NewsController extends Controller
     
     public function index(Request $request)
     {
+    // 検索機能
         $cond_title = $request->cond_title;
       if ($cond_title != '') {
           $posts = News::where('title', $cond_title)->get();
@@ -61,6 +62,7 @@ class NewsController extends Controller
     
     public function update(Request $request)
     {
+    // 画像をs３に保存
         $this->validate($request, News::$rules);
         $news = News::find($request->id);
         $news_form = $request->all();
@@ -78,6 +80,7 @@ class NewsController extends Controller
         unset($news_form['_token']);
         $news->fill($news_form)->save();
         
+    // 編集履歴
         $history = new History;
         $history->news_id = $news->id;
         $history->edited_at = Carbon::now();
@@ -88,9 +91,8 @@ class NewsController extends Controller
     
     public function delete(Request $request)
     {
-    // Newsモデルからデータ取得
+    // 削除機能
         $news = News::find($request->id);
-    // 削除する
         $news->delete();
         return redirect('admin/news');
     }

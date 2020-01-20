@@ -32,6 +32,12 @@
                         </div>
                     </div>
                     <div class="form-group row">
+                        <label class="col-md-2">投稿名（あだ名）</label>
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" name="name" value="{{ old('yourname') }}">
+                        </div>
+                    </div>
+                    <div class="form-group row">
                         <label class="col-md-2">画像</label>
                         <div class="col-md-10">
                             <input type="file" class="form-control-file" name="image">

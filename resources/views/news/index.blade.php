@@ -40,7 +40,7 @@
                         </div>
                         <div class="col-md-6">
                             <p class="body mx-auto">{{ str_limit($headline->body, 650) }}</p>
-                        </div>
+                            <p>＠{{ str_limit($headline->name, 20) }}</p>
                         </div>
                     </div>
                 </div>

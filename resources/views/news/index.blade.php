@@ -69,6 +69,7 @@
                             <div class="image col-md-6 text-right mt-4">
                                 @if ($post->image_path)
                                     <img src="{{ $post->image_path }}">
+                                    <p>＠{{ str_limit($post->name, 20) }}</p>
                                 @endif
                             </div>
                         </div>

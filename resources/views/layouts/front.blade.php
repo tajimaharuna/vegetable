@@ -27,14 +27,10 @@
             {{-- 画面上部に表示するナビゲーションバー --}}
             <nav class="navbar navbar-expand-md navbar-dark navbar-laravel">
                 <div class="container">
-                    <a class="navbar-brand" href="{{ url('/') }}">
+                    <ul class="nav navbar-link">
+                        <li><a class="navbar-brand" href="{{ url('/') }}">
                         {{ config('app.name', 'Laravel') }}
-                    </a>
-                    <button class="navbar-toggler" type="button" date-toggle="collapse" date-target="#navbarSupportedContent" aria-controls="naverSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-		            <div class="collapse navbar-collapse" id="navbarEexample7">
-			         　<ul class="nav navbar-link">
+                        </a></li>
 				        <li><a class="aa" href="/admin/news">編集画面</a></li>
                         <li><a class="aa" href="/admin/news/create">新規作成</a></li>
 			           </ul>
@@ -45,7 +41,7 @@
                         <ul class="nuvbar-nav ml-auto">
                         @guest
                             <li><a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a></li>
-                {{-- ログインしていたらユーザー名とログアウ���ボタンを表示 --}}
+                {{-- ログインしていたらユーザー名とログアウトボタンを表示 --}}
                             @else
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>

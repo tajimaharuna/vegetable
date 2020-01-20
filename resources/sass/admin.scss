@@ -1,7 +1,7 @@
 body {
     background-repeat: no-repeat;
     background-position: center;
-    background-color: #006400;
+    background-color: #228b22;
     color: #fff;
 }
 
@@ -34,14 +34,20 @@ body {
 }
 
 .login-box {
-    background-color: rgba(0,0,0,0);
+    background-color: #006400;
+    .login-copy{
+        text-align:center;
+        margin: 10px;
+    }
 }
 
 .login-header {
-    background-color: rgba(0,0,0,0.25);
+    background-color: rgba(0,0,0,0);
 }
 
 .login-body {
-    background-color: rgba(0,0,0,0.25);
+    background-color: rgba(0,0,0,0);
 }
+
+
 

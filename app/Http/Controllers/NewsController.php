@@ -11,14 +11,14 @@ class NewsController extends Controller
     //
     public function index(Request $request)
     {
-　　// 検索機能
+//検索機能
        $cond_title = $request->cond_title;
         if ($cond_title != '') {
           $posts = News::where('title', $cond_title)->orderBy('created_at','desc')->get();
         }else {
           $posts = News::orderBy('created_at','desc')->get();
         }
-　　// 最新記事の表記を変える
+//最新投稿の表記を変える
         if(count($posts) > 0){
           $headline = $posts->shift();
         }else{

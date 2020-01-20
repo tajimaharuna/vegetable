@@ -6,7 +6,7 @@
             <div class="col-md-8">
                 <div class="login-box card">
                     <div class="login-header card-header mx-auto">{{ __('messages.Login') }}</div>
-
+                        <p class="login-copy" >あなたの豆知識も教えてください！</p>
                     <div class="login-body card-body">
                         <form method="POST" action="{{ route('login') }}">
                             @csrf
@@ -56,6 +56,10 @@
                                     </button>
                                 </div>
                             </div>
+                            <p>ログインしたらできること</p>
+                            <ul>
+                                <li>★</li>
+                            </ul>
                         </form>
                     </div>
                 </div>

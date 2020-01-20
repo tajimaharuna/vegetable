@@ -1,7 +1,8 @@
 
 body {
   color: #000;
-  background-color: #fffacd;
+  background-color: #fff;
+  margin:0px;
 }
 
 .header {
@@ -12,16 +13,67 @@ body {
 }
 
 .navbar-laravel {
-    background-color: #ceff9e;
+    background-color: #a9a9a9;
     box-shadow: 0 2px 4px rgba(0,0,0,0.04);
   .aa{
       margin: 10px;
     }
 }
 
-.top-image{
-  width:1125px;
-  height:500px;
+body{
+    margin: 0;
+}
+
+.titleWrap{
+    margin: 0 auto;
+    max-width: 1000px;
+    position: relative;
+    overflow: hidden;
+}
+
+.img-box{
+    margin-left: 20%;
+}
+
+.img-box img{
+    width: 100%;
+    vertical-align: bottom;
+}
+
+.black-color,
+.white-color{
+    margin: 0; 
+    font-weight: bold;
+    font-size: 2.3em;
+    position: absolute;
+    top: 10%;
+    height: calc(100% - 10%);
+    overflow: hidden;
+}
+
+.white-color{
+    width: 100%;
+    margin-left: 20%;
+}
+
+.black-color{
+    width: 20%;
+}
+
+.white-color span,
+.black-color span{
+    display: block;
+    position: absolute;
+}
+
+.white-color span{
+    width: 100%;
+    color: #fff;
+    left: -20%;
+}
+
+.black-color span{
+    width: 500%;
 }
 
 .headline {

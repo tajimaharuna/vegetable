@@ -2,7 +2,21 @@
 
 @section('content')
     <div class="container">
-        <img class="top-image" src="https://tajimaharuna-vegetable.s3.us-east-2.amazonaws.com/vaP0moHHOXwlfj3MMol5XQJIAxa8nIanOTJKM5pT.jpeg">
+        <div class="titleWrap">
+          <p class="white-color">
+            <span class="white-text">
+              Welcome to kashima Farm!!<br>
+              むさしこすぎの八百屋さん
+            </span>
+          </p>
+            <div class="img-box"><img src="https://tajimaharuna-vegetable.s3.us-east-2.amazonaws.com/vaP0moHHOXwlfj3MMol5XQJIAxa8nIanOTJKM5pT.jpeg"></div>
+          <p class="black-color">
+            <span class="black-text">
+              Welcome to kashima Farm!!<br>
+              むさしこすぎの八百屋さん
+            </span>
+          </p>
+        </div>
         <h2>お野菜豆知識！</h2>
         　<hr color="#c0c0c0">
             <div class="col-md-8">

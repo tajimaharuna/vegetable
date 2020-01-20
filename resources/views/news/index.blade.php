@@ -2,6 +2,7 @@
 
 @section('content')
     <div class="container">
+        <img class="top-image" src="https://tajimaharuna-vegetable.s3.us-east-2.amazonaws.com/vaP0moHHOXwlfj3MMol5XQJIAxa8nIanOTJKM5pT.jpeg">
         <h2>お野菜豆知識！</h2>
         　<hr color="#c0c0c0">
             <div class="col-md-8">
@@ -25,6 +26,8 @@
                     <div class="row">
                         <div class="col-md-6">
                             <div class="caption mx-auto">
+                                <div class="new_box new_icon">
+                                </div>
                                 <div class="image">
                                     @if ($headline->image_path)
                                         <img src="{{ $headline->image_path }}">

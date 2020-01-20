@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 body {
   color: #000;
   background-color: #fffacd;
@@ -17,9 +19,32 @@ body {
   margin: 10px;
 }
 
+.top-image {
+  width: 1125px;
+  height: 500px;
+}
+
 .headline .caption {
   position: relative;
   width: 350px;
+}
+
+.headline .caption .new_box {
+  position: relative;
+}
+
+.headline .caption .new_icon:after {
+  position: absolute;
+  content: "NEW\FF01";
+  top: 5px;
+  left: 5px;
+  background: #ff0000;
+  color: #fff;
+  padding: 10px;
+}
+
+.headline .caption .new_box img {
+  width: 100%;
 }
 
 .headline .caption .image img {

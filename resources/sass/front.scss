@@ -19,10 +19,30 @@ body {
     }
 }
 
+.top-image{
+  width:1125px;
+  height:500px;
+}
+
 .headline {
   .caption {
     position: relative;
     width: 350px;
+    .new_box{
+    position: relative;
+    }
+    .new_icon:after{
+    position: absolute;
+    content: "NEW！";
+    top: 5px;
+    left: 5px;
+    background: #ff0000;
+    color: #fff;
+    padding: 10px;
+    }
+    .new_box img{
+    width: 100%;
+    }
     .image {
       img {
     width: 100%;

@@ -18,6 +18,7 @@ class NewsController extends Controller
         }else {
           $posts = News::orderBy('created_at','desc')->get();
         }
+        
 //最新投稿の表記を変える
         if(count($posts) > 0){
           $headline = $posts->shift();

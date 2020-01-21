@@ -17,7 +17,32 @@
             </span>
           </p>
         </div>
-        <h2>お野菜豆知識！</h2>
+        <div class="messageWrap" id="message">
+			<div class="message-about">
+				<h2 class="messageTitle">なんか落ち着く、小さな直売所です。</h2>
+				</br>
+				<p class="messageBody">鹿島農園は川崎市で何代も続く農家が営む、農家の直売所です。</br>
+				</br>
+				武蔵中原駅から徒歩１５分、武蔵小杉駅から自転車で１５分の位置にあり、</br>
+				ご近所の方から県外の方まで多くの皆様にご利用いただいています。</br>
+				</br>
+				鹿島農園では、すぐ横の畑で収穫した瑞々しいお野菜を皆様にお届けします。</br>
+				ちょっとついてる泥は、新鮮の証です。</br>
+				</br>
+				鹿島農園のお野菜はほとんど農薬を使わずに育てているので、</br>
+				小さなお子様でも安心して食べられます。</br>
+				</br>
+				たくさんの太陽を浴びた栄養満点の旬のお野菜を、</br>
+				多くの皆さんに食べていただきたいと思っています。</p>
+			</div>
+			<div class="message-img">
+				<img src="https://tajimaharuna-vegetable.s3.us-east-2.amazonaws.com/IMG_6407.JPG">
+			</div>
+		</div>
+		<div class="vege-news">
+        <h2>＼あなたの野菜の豆知識を教えて！vegitter／</h2>
+        <p>鹿島農園のお野菜を使ったレシピや、長持ちする保存法などを教えてください！</p>
+        </div>
         　<hr color="#c0c0c0">
             <div class="col-md-8">
                 <form action="{{ action('NewsController@index') }}" method="get">
@@ -92,4 +117,5 @@
                 @endforeach
             </div>
         </div>
+    </div>
 @endsection

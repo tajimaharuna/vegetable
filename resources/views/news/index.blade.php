@@ -40,8 +40,8 @@
 			</div>
 		</div>
 		<div class="vege-news">
-        <h2>＼あなたの野菜の豆知識を教えて！vegitter／</h2>
-        <p>鹿島農園のお野菜を使ったレシピや、長持ちする保存法などを教えてください！</p>
+        <h2 class="vege-title">＼あなたの野菜の豆知識を教えて！vegitter／</h2>
+        <p class="vege-body">鹿島農園のお野菜を使ったレシピや、長持ちする保存法などを教えてください！</p>
         </div>
         　<hr color="#c0c0c0">
             <div class="col-md-8">

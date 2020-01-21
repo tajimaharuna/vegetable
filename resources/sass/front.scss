@@ -99,16 +99,30 @@ body{
     height: 80%;
     transform: translate(-50%,-50%);
     padding: 100px;
+}
+
   .messageTitle{
     text-align:center;
   }
   .messageBody{
     text-align:center;
   }
+
+/*野菜SNS　vegetter コピー文*/
+
+.vege-news{
+  margin-top: 40px;
 }
 
+  .vege-title{
+    text-align: center;
+  }
+  
+  .vege-body{
+    text-align: center;
+  }
 
-/* 野菜SNS header部分　*/
+/* 野菜SNS 最新投稿　*/
 
 .headline {
   .caption {
@@ -160,7 +174,7 @@ body{
     font-size:30px;
   }
 
-/* 野菜SNS　post部分 */
+/* 野菜SNS　その他投稿部分 */
 .posts {
   .post {
     .date {

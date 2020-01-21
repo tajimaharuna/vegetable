@@ -16,7 +16,8 @@ class NewsController extends Controller
         if ($cond_title != '') {
           $posts = News::where('title', $cond_title)->orderBy('created_at','desc')->get();
         }else {
-          $posts = News::orderBy('created_at','desc')->get();
+          //$posts = News::orderBy('created_at','desc')->pagenate(5);
+          $posts = News::orderBy('created_at','desc')->paginate(5);
         }
         
 //最新投稿の表記を変える

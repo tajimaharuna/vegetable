@@ -115,6 +115,7 @@
                     </div>
                     <hr color="#c0c0c0">
                 @endforeach
+            {{ $posts->links() }}
             </div>
         </div>
     </div>

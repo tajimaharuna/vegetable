@@ -49,10 +49,11 @@ class NewsController extends Controller
     // 検索機能
         $cond_title = $request->cond_title;
       if ($cond_title != '') {
-          $posts = News::where('title', $cond_title)->where('user_id', Auth::user()->id)->get();
+          $posts = News::where('title', $cond_title)->where('user_id', Auth::user()->id)->orderBy('created_at','desc')->get();
       } else {
-          $posts = News::all();
+          $posts = News::orderBy('created_at','desc')->get();
       }
+      
       return view('admin.news.index', ['posts' => $posts, 'cond_title' => $cond_title]);
     }
     

@@ -47,7 +47,7 @@
             <div class="col-md-8">
                 <form action="{{ action('NewsController@index') }}" method="get">
                     <div class="form-group row">
-                        <label class="col-md-3">タイトルで検索</label>
+                        <label class="col-md-3">野菜名で検索</label>
                         <div class="col-md-5">
                             <input type="text" class="form-control" name="cond_title" value="{{ $cond_title }}">
                         </div>

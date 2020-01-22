@@ -7,6 +7,8 @@ use App\News;
 use App\History;
 use Carbon\Carbon;
 use Storage;
+use Illuminate\Support\Facades\Auth;
+//use App\User;
 
 class NewsController extends Controller
 {
@@ -19,7 +21,9 @@ class NewsController extends Controller
     public function create(Request $request)
     {
     // 新規作成ページ情報をDBに保存
+
       $this->validate($request, News::$rules);
+      
       $news = new News;
       $form = $request->all();
       
@@ -33,6 +37,7 @@ class NewsController extends Controller
       unset($form['_token']);
       unset($form['image']);
       
+      $news->user_id = Auth::user()->id;
       $news->fill($form);
       $news->save();
       
@@ -44,7 +49,7 @@ class NewsController extends Controller
     // 検索機能
         $cond_title = $request->cond_title;
       if ($cond_title != '') {
-          $posts = News::where('title', $cond_title)->get();
+          $posts = News::where('title', $cond_title)->where('user_id', Auth::user()->id)->get();
       } else {
           $posts = News::all();
       }
@@ -57,6 +62,11 @@ class NewsController extends Controller
         if (empty($news)) {
             abort(404);
         }
+        
+        if($news->user_id != Auth::user()->id){
+          return redirect('admin/news');
+        }
+        
         return view('admin.news.edit',['news_form'=>$news]);
     }
     
@@ -68,7 +78,7 @@ class NewsController extends Controller
         $news_form = $request->all();
         $form = $request->all();
         
-        if (isset($news_form['image'])) {
+      if (isset($news_form['image'])) {
         $path = Storage::disk('s3')->putFile('/',$form['image'],'public');
         $news->image_path = Storage::disk('s3')->url($path);
         unset($news_form['image']);
@@ -78,6 +88,7 @@ class NewsController extends Controller
         unset($news_form['remove']);
       }
         unset($news_form['_token']);
+        // dd($news_form);
         $news->fill($news_form)->save();
         
     // 編集履歴
@@ -92,8 +103,15 @@ class NewsController extends Controller
     public function delete(Request $request)
     {
     // 削除機能
-        $news = News::find($request->id);
-        $news->delete();
+        //$news = News::find($request->id);
+        //$news->delete();
+        $news = News::where('user_id', Auth::user()->id)->delete();
+
+        $loginuser = Auth::user();
+        if($news->user_id != $loginuser->id){
+          return redirect('admin/news');
+        }
+        
         return redirect('admin/news');
     }
 }

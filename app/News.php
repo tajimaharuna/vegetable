@@ -11,7 +11,7 @@ class News extends Model
     public static $rules =array(
         'title' => 'required',
         'body' => 'required',
-        'name' => 'required',
+        'user_name' => 'required',
         );
         
     public function histories()

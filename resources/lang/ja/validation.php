@@ -147,7 +147,8 @@ return [
 
     'attributes' => [
         'title' => 'タイトル',
-        'body' => '本文'
+        'body' => '本文',
+        'user_name' => '投稿者名',
         ],
 
 ];

@@ -33,7 +33,8 @@
                             <tr>
                                 <th width="10%">ID</th>
                                 <th width="20%">タイトル</th>
-                                <th width="50%">本文</th>
+                                <th width="40%">本文</th>
+                                <th width="10%">投稿者名</th>
                                 <th width="10%">操作</th>
                             </tr>
                         </thead>
@@ -43,9 +44,12 @@
                                     <th>{{ $news->id }}</th>
                                     <td>{{ str_limit($news->title, 100) }}</td>
                                     <td>{{ str_limit($news->body, 250) }}</td>
+                                    <td>{{ str_limit($news->user_name, 20) }}</td>
                                     <td>
+                                      @if($news->user_id == Auth::user()->id)
                                         <div><a href="{{ action('Admin\NewsController@edit', ['id' => $news->id]) }}">編集</a></div>
                                     　　<div><a href="{{ action('Admin\NewsController@delete', ['id' => $news->id]) }}">削除</a></div>
+                                    　@endif
                                     </td>
                                 </tr>
                             @endforeach

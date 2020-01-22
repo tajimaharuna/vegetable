@@ -1,20 +1,20 @@
 @extends('layouts.admin')
-@section('title', '登録済みニュースの一覧')
+@section('title', '登録済み野菜豆知識の一覧')
 
 @section('content')
     <div class="container">
         <div class="row">
-            <h2>ニュース一覧</h2>
+            <h2>みんなの野菜豆知識一覧</h2>
         </div>
         <div class="row">
             <div class="col-md-4">
-                <a href="{{ action('Admin\NewsController@add') }}" role="button" class="btn btn-primary">新規作成</a>
+                <a href="{{ action('Admin\NewsController@add') }}" role="button" class="btn btn-primary">投稿の新規作成</a>
             </div>
             <div class="col-md-8">
                 <form action="{{ action('Admin\NewsController@index') }}" method="get">
                     <div class="form-group row">
-                        <label class="col-md-2">タイトル</label>
-                        <div class="col-md-8">
+                        <label class="col-md-3">野菜名で検索する</label>
+                        <div class="col-md-7">
                             <input type="text" class="form-control" name="cond_title" value="{{ $cond_title }}">
                         </div>
                         <div class="col-md-2">
@@ -25,6 +25,7 @@
                 </form>
             </div>
         </div>
+        <p>※自分の投稿内容のみ編集・削除ができます。</p>
         <div class="row">
             <div class="list-news col-md-12 mx-auto">
                 <div class="row">
@@ -32,7 +33,7 @@
                         <thead>
                             <tr>
                                 <th width="10%">ID</th>
-                                <th width="20%">タイトル</th>
+                                <th width="20%">野菜名</th>
                                 <th width="40%">本文</th>
                                 <th width="10%">投稿者名</th>
                                 <th width="10%">操作</th>

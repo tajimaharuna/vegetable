@@ -48,7 +48,7 @@
                 <a href="/login" class="btn-radius-white">マイページログイン</a>
                 <a href="/admin/news" class="btn-radius-white">記事を編集する</a>
                 <a href="/admin/news/create" class="btn-radius-white">新しい記事を書く</a>
-                <a href="/register" class="btn-radius-orange">ユーザー登録（無料）</a>
+                <a href="/register" class="btn-radius-orange">新規ユーザー登録（無料）</a>
                 <p></br>はじめての方はユーザー登録が必要です。</p>
             </div>
         </div>

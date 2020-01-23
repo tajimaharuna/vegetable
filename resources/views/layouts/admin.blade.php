@@ -42,6 +42,7 @@
 			         　<ul class="nav navbar-link">
 				        <li><a class="aa" href="/admin/news">投稿一覧</a></li>
                         <li><a class="aa" href="/admin/news/create">新規作成</a></li>
+                        <li><a class="aa" href="/register">ユーザー登録（無料）</a></li>
                        </ul>
                         
                         <!-- Left Side Of Navbar -->

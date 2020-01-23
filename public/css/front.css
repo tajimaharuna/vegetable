@@ -118,15 +118,45 @@ body {
 /*野菜SNS　vegetter コピー文*/
 
 .vege-news {
-  margin: 40px;
-}
-
-.vege-title {
+  margin: 30px;
   text-align: center;
 }
 
-.vege-body {
+/* 野菜SNSリンク */
+
+.link-box {
   text-align: center;
+}
+
+.btn-radius-white {
+  padding: 7px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  color: #000;
+  background-color: #fff;
+  border: solid 2px #ffc489;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.btn-radius-white:hover {
+  opacity: 60%;
+  text-decoration: none;
+}
+
+.btn-radius-orange {
+  padding: 7px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #ffc489;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.btn-radius-orange:hover {
+  opacity: 60%;
+  text-decoration: none;
 }
 
 /* 野菜SNS 最新投稿　*/

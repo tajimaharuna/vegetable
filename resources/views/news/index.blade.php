@@ -40,11 +40,20 @@
 			</div>
 		</div>
 		<div class="vege-news">
-        <h2 class="vege-title">＼あなたの野菜の豆知識を教えて！vegitter／</h2>
-        <p class="vege-body">鹿島農園のお野菜を使ったレシピや、長持ちする保存法などを教えてください！</p>
+		<p>鹿島農園のお野菜を使ったレシピや、長持ちする保存法などをご紹介します</p>
+        <h2>＼みんなの野菜の豆知識！vegitter／</h2>
+        </div>
+        <div class="linkWrap">
+            <div class="link-box">
+                <a href="/login" class="btn-radius-white">マイページログイン</a>
+                <a href="/admin/news" class="btn-radius-white">記事を編集する</a>
+                <a href="/admin/news/create" class="btn-radius-white">新しい記事を書く</a>
+                <a href="/register" class="btn-radius-orange">ユーザー登録（無料）</a>
+                <p></br>はじめての方はユーザー登録が必要です。</p>
+            </div>
         </div>
         　<hr color="#c0c0c0">
-            <div class="col-md-8">
+            <div class="col-md-8 form">
                 <form action="{{ action('NewsController@index') }}" method="get">
                     <div class="form-group row">
                         <label class="col-md-3">野菜名で検索</label>

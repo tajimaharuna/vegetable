@@ -66,6 +66,7 @@
             </main>
         </div
       </div>
+                  {{-- googlemap --}}
       <div class="maps">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3245.3063926065556!2d139.63730271525574!3d35.57082868022012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc8e1192002531a6a!2z6bm_5bO26L6y5ZyS55u05aOy5omA!5e0!3m2!1sja!2sjp!4v1579754685016!5m2!1sja!2sjp" width="500" height="400" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
         <div class="map-text">
@@ -76,6 +77,7 @@
             <p>AM9:00~なくなり次第・不定休</p>
         </div>
       </div>
+                  {{-- シェアボタン --}}
       <div class="share-button">
           <ul>
     　        <p>＼友達に教える／</p>
@@ -84,5 +86,42 @@
               <a class="fab fa-line" href="javascript:window.open('http://line.me/R/msg/text/?'+encodeURIComponent(document.title)+'%20'+encodeURIComponent(location.href),'sharewindow','width=550, height=450, personalbar=0, toolbar=0, scrollbars=1, resizable=!');">LINE</a>
           </ul>
       </div>
+                     {{-- 画面下部に表示するナビゲーションバー　--}}
+            <nav class="navbar navbar-expand-md navbar-dark navbar-laravel">
+                <div class="container">
+                    <ul class="nav navbar-link">
+                        <li><a class="navbar-brand" href="{{ url('/') }}">
+                        {{ config('app.name', 'Laravel') }}
+                        </a></li>
+			           </ul>
+                    <div class="collapse navbar-collapse" id="navbarSupportContent">
+                        <ul class="navbar-nav mr-auto">
+                            
+                        </ul> 
+                        <ul class="nuvbar-nav ml-auto">
+                        @guest
+                            <li><a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a></li>
+                {{-- ログインしていたらユーザー名とログアウトボタンを表示 --}}
+                            @else
+                            <li class="nav-item dropdown">
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                    {{ Auth::user()->name }} <span class="caret"></span>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="{{ route('logout') }}"
+                                       onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                        {{ __('Logout') }}
+                                    </a>
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                        @csrf
+                                    </form>
+                                </div>
+                            </li>
+                        @endguest
+                        </ul>
+                    </div>
+                </div>
+            </nav>
     </body>
 </html>

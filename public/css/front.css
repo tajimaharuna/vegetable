@@ -236,10 +236,33 @@ body {
   width: 250px;
 }
 
+/* googlemap */
+
+.maps {
+  text-align: center;
+}
+
+.maps iframe {
+  max-width: 800px;
+  margin: auto;
+  display: inline-block;
+}
+
+.map-text {
+  display: inline-block;
+  margin: 70px 10px;
+  vertical-align: top;
+}
+
+.map-text h3 {
+  border-bottom: dashed 2px #ffc489;
+}
+
 /* shareボタンとアイコン */
 
 .share-button {
   text-align: center;
+  clear: both;
 }
 
 .fab {

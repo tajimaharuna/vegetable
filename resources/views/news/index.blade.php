@@ -91,7 +91,7 @@
                         </div>
                         <div class="col-md-6">
                             <p class="body mx-auto">{{ str_limit($headline->body, 650) }}</p>
-                            <p>＠{{ str_limit($headline->name, 20) }}</p>
+                            <p>＠{{ str_limit($headline->user_name, 20) }}</p>
                         </div>
                     </div>
                 </div>
@@ -117,7 +117,7 @@
                             <div class="image col-md-6 text-right mt-4">
                                 @if ($post->image_path)
                                     <img src="{{ $post->image_path }}">
-                                    <p>＠{{ str_limit($post->name, 20) }}</p>
+                                    <p>＠{{ str_limit($post->user_name, 20) }}</p>
                                 @endif
                             </div>
                         </div>

@@ -64,15 +64,25 @@
             <main class="py-4">
                 @yield('content')
             </main>
+        </div
+      </div>
+      <div class="maps">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3245.3063926065556!2d139.63730271525574!3d35.57082868022012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc8e1192002531a6a!2z6bm_5bO26L6y5ZyS55u05aOy5omA!5e0!3m2!1sja!2sjp!4v1579754685016!5m2!1sja!2sjp" width="500" height="400" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        <div class="map-text">
+            <h3>Access</h3>
+            <h4>武蔵中原・武蔵小杉の野菜直売所</br>鹿島農園</h4>
+            </br>
+            <p>〒211-0041</br>神奈川県川崎市中原区下小田中６丁目２６−３</p>
+            <p>AM9:00~なくなり次第・不定休</p>
         </div>
       </div>
       <div class="share-button">
-      <ul>
-    　<p>＼友達に教える／</p>
-      <a class="fab fa-twitter" href="javascript:window.open('http://twitter.com/share?text='+encodeURIComponent(document.title)+'&url='+encodeURIComponent(location.href),'sharewindow','width=550, height=450, personalbar=0, toolbar=0, scrollbars=1, resizable=!');">Tweet</a>
-      <a class="fab fa-facebook" href="javascript:window.open('http://www.facebook.com/sharer.php?u='+encodeURIComponent(location.href),'sharewindow','width=550, height=450, personalbar=0, toolbar=0, scrollbars=1, resizable=!');">Facebook</a>
-      <a class="fab fa-line" href="javascript:window.open('http://line.me/R/msg/text/?'+encodeURIComponent(document.title)+'%20'+encodeURIComponent(location.href),'sharewindow','width=550, height=450, personalbar=0, toolbar=0, scrollbars=1, resizable=!');">LINE</a>
-      </ul>
+          <ul>
+    　        <p>＼友達に教える／</p>
+              <a class="fab fa-twitter" href="javascript:window.open('http://twitter.com/share?text='+encodeURIComponent(document.title)+'&url='+encodeURIComponent(location.href),'sharewindow','width=550, height=450, personalbar=0, toolbar=0, scrollbars=1, resizable=!');">Tweet</a>
+              <a class="fab fa-facebook" href="javascript:window.open('http://www.facebook.com/sharer.php?u='+encodeURIComponent(location.href),'sharewindow','width=550, height=450, personalbar=0, toolbar=0, scrollbars=1, resizable=!');">Facebook</a>
+              <a class="fab fa-line" href="javascript:window.open('http://line.me/R/msg/text/?'+encodeURIComponent(document.title)+'%20'+encodeURIComponent(location.href),'sharewindow','width=550, height=450, personalbar=0, toolbar=0, scrollbars=1, resizable=!');">LINE</a>
+          </ul>
       </div>
     </body>
 </html>

@@ -5,6 +5,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="js/topreverse.js"></script>
         
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
         
@@ -23,13 +25,14 @@
     </head>
     
     <body>
+        <div id="page_top"><a href="#"></a></div>
         <div id="app">
             {{-- 画面上部に表示するナビゲーションバー --}}
             <nav class="navbar navbar-expand-md navbar-dark navbar-laravel">
                 <div class="container">
                     <ul class="nav navbar-link">
                         <li><a class="navbar-brand" href="{{ url('/') }}">
-                        {{ config('app.name', 'Laravel') }}
+                        top
                         </a></li>
 			           </ul>
                     <div class="collapse navbar-collapse" id="navbarSupportContent">
@@ -86,42 +89,5 @@
               <a class="fab fa-line" href="javascript:window.open('http://line.me/R/msg/text/?'+encodeURIComponent(document.title)+'%20'+encodeURIComponent(location.href),'sharewindow','width=550, height=450, personalbar=0, toolbar=0, scrollbars=1, resizable=!');">LINE</a>
           </ul>
       </div>
-                     {{-- 画面下部に表示するナビゲーションバー　--}}
-            <nav class="navbar navbar-expand-md navbar-dark navbar-laravel">
-                <div class="container">
-                    <ul class="nav navbar-link">
-                        <li><a class="navbar-brand" href="{{ url('/') }}">
-                        {{ config('app.name', 'Laravel') }}
-                        </a></li>
-			           </ul>
-                    <div class="collapse navbar-collapse" id="navbarSupportContent">
-                        <ul class="navbar-nav mr-auto">
-                            
-                        </ul> 
-                        <ul class="nuvbar-nav ml-auto">
-                        @guest
-                            <li><a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a></li>
-                {{-- ログインしていたらユーザー名とログアウトボタンを表示 --}}
-                            @else
-                            <li class="nav-item dropdown">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->name }} <span class="caret"></span>
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
-                                    </a>
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                        @csrf
-                                    </form>
-                                </div>
-                            </li>
-                        @endguest
-                        </ul>
-                    </div>
-                </div>
-            </nav>
     </body>
 </html>

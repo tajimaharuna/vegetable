@@ -6,22 +6,23 @@
           <p class="white-color">
             <span class="white-text">
               Welcome to kashima Farm!!<br>
-              むさしこすぎの八百屋さん
+              武蔵小杉の八百屋さん
             </span>
           </p>
             <div class="img-box"><img src="https://tajimaharuna-vegetable.s3.us-east-2.amazonaws.com/vaP0moHHOXwlfj3MMol5XQJIAxa8nIanOTJKM5pT.jpeg"></div>
           <p class="black-color">
             <span class="black-text">
               Welcome to kashima Farm!!<br>
-              むさしこすぎの八百屋さん
+              武蔵小杉の八百屋さん
             </span>
           </p>
         </div>
         <div class="messageWrap" id="message">
-			<div class="message-about">
-				<h2 class="messageTitle">なんか落ち着く、小さな直売所です。</h2>
+			<div class="messageBox">
+			   <div class="messageText">
+				<h2>なんか落ち着く、小さな直売所です。</h2>
 				</br>
-				<p class="messageBody">鹿島農園は川崎市で何代も続く農家が営む、農家の直売所です。</br>
+				<p>鹿島農園は川崎市で何代も続く農家が営む、農家の直売所です。</br>
 				</br>
 				武蔵中原駅から徒歩１５分、武蔵小杉駅から自転車で１５分の位置にあり、</br>
 				ご近所の方から県外の方まで多くの皆様にご利用いただいています。</br>
@@ -34,6 +35,7 @@
 				</br>
 				たくさんの太陽を浴びた栄養満点の旬のお野菜を、</br>
 				多くの皆さんに食べていただきたいと思っています。</p>
+			   </div>
 			</div>
 			<div class="message-img">
 				<img src="https://tajimaharuna-vegetable.s3.us-east-2.amazonaws.com/IMG_6407.JPG">

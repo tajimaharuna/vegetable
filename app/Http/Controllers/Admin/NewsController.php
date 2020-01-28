@@ -36,7 +36,7 @@ class NewsController extends Controller
       
       unset($form['_token']);
       unset($form['image']);
-      
+      // userテーブルのidカラムを、newsテーブルのuser_idカラムに代入する
       $news->user_id = Auth::user()->id;
       $news->fill($form);
       $news->save();
@@ -104,14 +104,7 @@ class NewsController extends Controller
     public function delete(Request $request)
     {
     // 削除機能
-        //$news = News::find($request->id);
-        //$news->delete();
-        $news = News::where('user_id', Auth::user()->id)->delete();
-
-        $loginuser = Auth::user();
-        if($news->user_id != $loginuser->id){
-          return redirect('admin/news');
-        }
+        $news = News::where('user_id', Auth::user()->id)->find($request->id)->delete();
         
         return redirect('admin/news');
     }

@@ -1,16 +1,16 @@
 body {
     background-repeat: no-repeat;
     background-position: center;
-    background-color: #228b22;
-    color: #fff;
+    background-color: #fff;
+    color: #000;
 }
 
 .navbar-laravel {
-    background-color: #006400;
+    background-color: #ffc489;
     box-shadow: 0 2px 4px rgba(0,0,0,0.04);
      .aa{
         margin: 10px;
-        color: #fff;
+        color: #000;
     }
 
 }
@@ -24,17 +24,17 @@ body {
 }
 
 .table-dark {
-    color: #fff;
-    background-color: #00ff6c42;
+    color: #000;
+    background-color: #e9ecef;
 }
 
 .list-group-item {
-    border-color: #fff;
+    border-color: #000;
     background-color: #000;
 }
 
 .login-box {
-    background-color: #006400;
+    background-color: #e9ecef;
     .login-copy{
         text-align:center;
         margin: 10px;

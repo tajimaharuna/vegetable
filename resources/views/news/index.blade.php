@@ -95,6 +95,13 @@
                             <p class="body mx-auto">{{ str_limit($headline->body, 650) }}</p>
                             <p>＠{{ str_limit($headline->user_name, 20) }}</p>
                         </div>
+                        <div class="share-button">
+                          <ul>
+                              <a class="fab fa-twitter" href="javascript:window.open('http://twitter.com/share?text='+encodeURIComponent(document.title)+'&url='+encodeURIComponent(location.href),'sharewindow','width=550, height=450, personalbar=0, toolbar=0, scrollbars=1, resizable=!');">Tweet</a>
+                              <a class="fab fa-facebook" href="javascript:window.open('http://www.facebook.com/sharer.php?u='+encodeURIComponent(location.href),'sharewindow','width=550, height=450, personalbar=0, toolbar=0, scrollbars=1, resizable=!');">Facebook</a>
+                              <a class="fab fa-line" href="javascript:window.open('http://line.me/R/msg/text/?'+encodeURIComponent(document.title)+'%20'+encodeURIComponent(location.href),'sharewindow','width=550, height=450, personalbar=0, toolbar=0, scrollbars=1, resizable=!');">LINE</a>
+                          </ul>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -14,7 +14,7 @@ class NewsController extends Controller
 //検索機能
        $cond_title = $request->cond_title;
         if ($cond_title != '') {
-          $posts = News::where('title', $cond_title)->orderBy('created_at','desc')->paginate(5);
+          $posts = News::where('title','like','%'.$cond_title.'%')->orderBy('created_at','desc')->paginate(5);
         }else {
           $posts = News::orderBy('created_at','desc')->paginate(5);
         }

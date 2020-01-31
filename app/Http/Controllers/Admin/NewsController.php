@@ -49,7 +49,7 @@ class NewsController extends Controller
     // 検索機能
         $cond_title = $request->cond_title;
       if ($cond_title != '') {
-          $posts = News::where('title', $cond_title)->where('user_id', Auth::user()->id)->orderBy('created_at','desc')->get();
+          $posts = News::where('title','like','%'.$cond_title.'%')->where('user_id', Auth::user()->id)->orderBy('created_at','desc')->get();
       } else {
           $posts = News::orderBy('created_at','desc')->get();
       }

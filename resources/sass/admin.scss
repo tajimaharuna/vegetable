@@ -8,16 +8,28 @@ body {
 .navbar-laravel {
     background-color: #ffc489;
     box-shadow: 0 2px 4px rgba(0,0,0,0.04);
-     .aa{
-        margin: 10px;
-        color: #000;
-    }
-
 }
 
 .navbar-brand {
     color: #fff !important;
 }
+
+.navbar-collapse{
+    img{
+        width:70%;
+        border: none;
+    }
+    a{
+        width:10%;
+    }
+}
+
+
+.menu{
+    margin: 10px;
+    color: #000;
+}
+
 
 .nav-link {
     color: #fff !important;

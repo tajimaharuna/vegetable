@@ -6,14 +6,14 @@
           <p class="white-color">
             <span class="white-text">
               Welcome to kashima Farm!!<br>
-              武蔵小杉の八百屋さん
+              武蔵小杉の新鮮野菜
             </span>
           </p>
             <div class="img-box"><img src="https://tajimaharuna-vegetable.s3.us-east-2.amazonaws.com/vaP0moHHOXwlfj3MMol5XQJIAxa8nIanOTJKM5pT.jpeg"></div>
           <p class="black-color">
             <span class="black-text">
               Welcome to kashima Farm!!<br>
-              武蔵小杉の八百屋さん
+              武蔵小杉の新鮮野菜
             </span>
           </p>
         </div>

@@ -18,8 +18,8 @@ body {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 }
 
-.navbar-laravel .aa {
-  margin: 10px;
+.navbar-brand img {
+  width: 10%;
 }
 
 /* top画像と白黒テキスト*/

@@ -31,9 +31,9 @@
             <nav class="navbar navbar-expand-md navbar-dark navbar-laravel">
                 <div class="container">
                     <ul class="nav navbar-link">
-                        <li><a class="navbar-brand" href="{{ url('/') }}">
-                        top
-                        </a></li>
+                        <a class="navbar-brand" href="{{ url('/') }}">
+                        <img src="https://tajimaharuna-vegetable.s3.us-east-2.amazonaws.com/logo_transparent.png">
+                        </a>
 			           </ul>
                     <div class="collapse navbar-collapse" id="navbarSupportContent">
                         <ul class="navbar-nav mr-auto">

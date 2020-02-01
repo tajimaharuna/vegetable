@@ -22,6 +22,7 @@
 
         <link href="{{ secure_asset('css/app.css') }}" rel="stylesheet">
         <link href="{{ secure_asset('css/front.css') }}" rel="stylesheet">
+        <link rel="shortcut icon" href="https://tajimaharuna-vegetable.s3.us-east-2.amazonaws.com/icons8-%E3%83%8A%E3%82%B9-48.png">
     </head>
     
     <body>

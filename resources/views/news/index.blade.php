@@ -20,7 +20,7 @@
         <div class="messageWrap" id="message">
 			<div class="messageBox">
 			   <div class="messageText">
-				<h2>なんか落ち着く、小さな直売所です。</h2>
+				<h3>なんか落ち着く、小さな直売所です。</h3>
 				</br>
 				<p>鹿島農園は川崎市で何代も続く農家が営む、農家の直売所です。</br>
 				</br>

@@ -9,7 +9,7 @@
         <script type="text/javascript" src="js/topreverse.js"></script>
         
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-        
+
         <meta property="og:title" content="野菜の豆知識" />
         <meta property="og:image" content="何か画像" />
         <meta property="og:site_name" content="野菜の豆知識" />

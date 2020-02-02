@@ -19,40 +19,40 @@
         </div>
         <div class="messageWrap" id="message">
 			<div class="messageBox">
-			   <div class="messageText">
+			   <div class="messageText" style="height: 70%; overflow: scroll;">
 				<h3>なんか落ち着く、小さな直売所です。</h3>
 				</br>
-				<p>鹿島農園は川崎市で何代も続く農家が営む、農家の直売所です。</br>
-				</br>
-				武蔵中原駅から徒歩１５分、武蔵小杉駅から自転車で１５分の位置にあり、</br>
-				ご近所の方から県外の方まで多くの皆様にご利用いただいています。</br>
-				</br>
-				鹿島農園では、すぐ横の畑で収穫した瑞々しいお野菜を皆様にお届けします。</br>
-				ちょっとついてる泥は、新鮮の証です。</br>
-				</br>
-				鹿島農園のお野菜はほとんど農薬を使わずに育てているので、</br>
-				小さなお子様でも安心して食べられます。</br>
-				</br>
-				たくさんの太陽を浴びた栄養満点の旬のお野菜を、</br>
+				<p>鹿島農園は川崎市で何代も続く農家が営む、農家の直売所です。</p>
+				<p>武蔵中原駅から徒歩１５分、武蔵小杉駅から自転車で１５分の位置にあり、</br>
+				ご近所の方から県外の方まで多くの皆様にご利用いただいています。</p>
+				<p>鹿島農園では、すぐ横の畑で収穫した瑞々しいお野菜を皆様にお届けします。</p>
+				<p>ちょっとついてる泥は、新鮮の証です。</p>
+				
+				<p>鹿島農園のお野菜はほとんど農薬を使わずに育てているので、</br>
+				小さなお子様でも安心して食べられます。</p>
+				<p>たくさんの太陽を浴びた栄養満点の旬のお野菜を、</br>
 				多くの皆さんに食べていただきたいと思っています。</p>
 			   </div>
-			</div>
-			<div class="message-img">
+			   <div class="message-img">
 				<img src="https://tajimaharuna-vegetable.s3.us-east-2.amazonaws.com/IMG_6407.JPG">
+			   </div>
 			</div>
 		</div>
 		<div class="vege-news">
-		<p>鹿島農園のお野菜を使ったレシピや、長持ちする保存法などをご紹介します</p>
-        <h2>＼みんなの野菜の豆知識！vegitter／</h2>
-        </div>
-        <div class="linkWrap">
+		    <div class="vege-text">
+		        <p>鹿島農園のお野菜を使ったレシピや、長持ちする保存法などをご紹介します</p>
+                <h2>＼みんなの野菜の豆知識！vegitter／</h2>
+            </div>
+        
+         <div class="linkWrap">
             <div class="link-box">
-                <a href="/login" class="btn-radius-white">マイページログイン</a>
-                <a href="/admin/news" class="btn-radius-white">記事を編集する</a>
-                <a href="/admin/news/create" class="btn-radius-white">新しい記事を書く</a>
-                <a href="/register" class="btn-radius-orange">新規ユーザー登録（無料）</a>
+                <a href="/login" class="btn radius-white">マイページログイン</a>
+                <a href="/admin/news" class="btn radius-white">記事を編集する</a>
+                <a href="/admin/news/create" class="btn radius-white">新しい記事を書く</a>
+                <a href="/register" class="btn radius-orange">新規ユーザー登録（無料）</a>
                 <p></br>はじめての方はユーザー登録が必要です。</p>
             </div>
+         </div>
         </div>
         　<hr color="#c0c0c0">
             <div class="col-md-8 form">
@@ -94,13 +94,6 @@
                         <div class="col-md-6">
                             <p class="body mx-auto">{{ str_limit($headline->body, 650) }}</p>
                             <p>＠{{ str_limit($headline->user_name, 20) }}</p>
-                        </div>
-                        <div class="share-button">
-                          <ul>
-                              <a class="fab fa-twitter" href="javascript:window.open('http://twitter.com/share?text='+encodeURIComponent(document.title)+'&url='+encodeURIComponent(location.href),'sharewindow','width=550, height=450, personalbar=0, toolbar=0, scrollbars=1, resizable=!');">Tweet</a>
-                              <a class="fab fa-facebook" href="javascript:window.open('http://www.facebook.com/sharer.php?u='+encodeURIComponent(location.href),'sharewindow','width=550, height=450, personalbar=0, toolbar=0, scrollbars=1, resizable=!');">Facebook</a>
-                              <a class="fab fa-line" href="javascript:window.open('http://line.me/R/msg/text/?'+encodeURIComponent(document.title)+'%20'+encodeURIComponent(location.href),'sharewindow','width=550, height=450, personalbar=0, toolbar=0, scrollbars=1, resizable=!');">LINE</a>
-                          </ul>
                         </div>
                     </div>
                 </div>

@@ -5,15 +5,13 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
+        <meta name="description" content="武蔵小杉の鹿島農園">
+        
         <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
         <script type="text/javascript" src="js/topreverse.js"></script>
         
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
 
-        <meta property="og:title" content="野菜の豆知識" />
-        <meta property="og:image" content="何か画像" />
-        <meta property="og:site_name" content="野菜の豆知識" />
-        
         <title>@yield('title')</title>
         <script src="{{ secure_asset('js/app.js') }}"defer></script>
         

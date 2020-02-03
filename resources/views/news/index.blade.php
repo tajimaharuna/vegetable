@@ -1,4 +1,5 @@
 @extends('layouts.front')
+@section('title', '武蔵小杉の新鮮野菜　鹿島農園')
 
 @section('content')
     <div class="container">
@@ -20,15 +21,15 @@
         <div class="messageWrap" id="message">
 			<div class="messageBox">
 			   <div class="messageText" style="height: 70%; overflow: scroll;">
-			    </br>
+			    <p></p>
+			    <p></p>
 				<h3>なんか落ち着く、小さな直売所です。</h3>
-				</br>
+				<p></p>
 				<p>鹿島農園は川崎市で何代も続く農家が営む、農家の直売所です。</p>
 				<p>武蔵中原駅から徒歩１５分、武蔵小杉駅から自転車で１５分の位置にあり、</br>
 				ご近所の方から県外の方まで多くの皆様にご利用いただいています。</p>
 				<p>鹿島農園では、すぐ横の畑で収穫した瑞々しいお野菜を皆様にお届けします。</p>
 				<p>ちょっとついてる泥は、新鮮の証です。</p>
-				
 				<p>鹿島農園のお野菜はほとんど農薬を使わずに育てているので、</br>
 				小さなお子様でも安心して食べられます。</p>
 				<p>たくさんの太陽を浴びた栄養満点の旬のお野菜を、</br>
@@ -127,7 +128,7 @@
                     </div>
                     <hr color="#c0c0c0">
                 @endforeach
-            {{ $posts->links() }}
+            
             </div>
         </div>
     </div>

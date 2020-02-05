@@ -3,6 +3,7 @@
 
 @section('content')
     <div class="container">
+        <div id="contents01">
         <div class="titleWrap">
           <p class="white-color">
             <span class="white-text">
@@ -18,6 +19,8 @@
             </span>
           </p>
         </div>
+        </div>
+    <div id="contents02">
         <div class="messageWrap" id="message">
 			<div class="messageBox">
 			   <div class="messageText" style="height: 70%; overflow: scroll;">
@@ -40,6 +43,8 @@
 			   </div>
 			</div>
 		</div>
+	</div>
+	<div id="contents03">
 		<div class="vege-news">
 		    <div class="vege-text">
 		        <p>鹿島農園のお野菜を使ったレシピや、長持ちする保存法などをご紹介します</p>
@@ -128,8 +133,9 @@
                     </div>
                     <hr color="#c0c0c0">
                 @endforeach
-            
+            {{ $posts->links() }}
             </div>
         </div>
+       </div>
     </div>
 @endsection

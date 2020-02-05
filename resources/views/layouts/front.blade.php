@@ -31,8 +31,7 @@
                 <div class="container">
                     <ul class="nav navbar-link">
                         <a class="navbar-brand" href="{{ url('/') }}">
-                        <img src="https://tajimaharuna-vegetable.s3.us-east-2.amazonaws.com/logo_transparent.png">
-                        </a>
+                        <img src="https://tajimaharuna-vegetable.s3.us-east-2.amazonaws.com/logo_transparent.png"></a>
 			           </ul>
                     <div class="collapse navbar-collapse" id="navbarSupportContent">
                         <ul class="navbar-nav mr-auto">
@@ -60,6 +59,19 @@
                             </li>
                         @endguest
                         </ul>
+                     <div id="nav-drawer">
+                          <input id="nav-input" type="checkbox" class="nav-unshown">
+                          <label id="nav-open" for="nav-input"><span></span></label>
+                          <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+                          <div id="nav-content">
+                            <ul id="gnav">
+                             <li><a href="#contents01">ページトップ</a></li>
+                             <li><a href="#contents02">わたしたちについて</a></li>
+                             <li><a href="#contents03">みんなの野菜豆知識</a></li>
+                             <li><a href="#contents04">アクセス</a></li>
+                            </ul>
+                          </div>
+                     </div>
                     </div>
                 </div>
             </nav>
@@ -69,6 +81,7 @@
         </div
       </div>
                   {{-- googlemap --}}
+    <div id="contents04">
       <div class="maps">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3245.3063926065556!2d139.63730271525574!3d35.57082868022012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc8e1192002531a6a!2z6bm_5bO26L6y5ZyS55u05aOy5omA!5e0!3m2!1sja!2sjp!4v1579754685016!5m2!1sja!2sjp" width="500" height="400" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
         <div class="map-text">
@@ -88,5 +101,6 @@
               <a class="fab fa-line" href="javascript:window.open('http://line.me/R/msg/text/?'+encodeURIComponent(document.title)+'%20'+encodeURIComponent(location.href),'sharewindow','width=550, height=450, personalbar=0, toolbar=0, scrollbars=1, resizable=!');">LINE</a>
           </ul>
       </div>
+     </div>
     </body>
 </html>

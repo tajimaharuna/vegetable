@@ -15,7 +15,7 @@ class NewsController extends Controller
        //ひらがなをカタカナに変換
        $kana_title = mb_convert_kana($request->cond_title,"KVC");
        //カタカナをひらがなに変換
-       $katakana_title = mb_convert_kana($request->cond_title,"KVC");
+       $katakana_title = mb_convert_kana($request->cond_title,"KVc");
         if ($cond_title != '') {
 
           //reqestを曖昧検索、KVCを曖昧検索、KVcを曖昧検索、新着順に並べる

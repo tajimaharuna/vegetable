@@ -19,7 +19,6 @@ class NewsController extends Controller
           //$posts = $collection1->merge($collection2)->get();
 
           $posts = News::where('title','LIKE','%'.$cond_title.'%')->orderBy('created_at','desc')->paginate(5);
-dd($posts);
         }else {
           $posts = News::orderBy('created_at','desc')->paginate(5);
         }

@@ -18,7 +18,7 @@ class NewsController extends Controller
        $katakana_title = mb_convert_kana($request->cond_title,"KVc");
         if ($cond_title != '') {
 
-          //reqestを曖昧検索、KVCを曖昧検索、KVcを曖昧検索、新着順に並べる
+          //reqestを曖昧検索、KVCを曖昧検索、KVcを曖昧検索
           $posts = News::where('title','LIKE','%'.$cond_title.'%')
                           ->orWhere('title','LIKE','%'.$kana_title.'%')
                           ->orWhere('title','LIKE','%'.$katakana_title.'%')

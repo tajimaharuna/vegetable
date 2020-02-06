@@ -12,17 +12,21 @@ class NewsController extends Controller
     {
 //検索機能
        $cond_title = $request->cond_title;
+       //ひらがなをカタカナに変換
        $kana_title = mb_convert_kana($request->cond_title,"KVC");
+       //カタカナをひらがなに変換
+       $katakana_title = mb_convert_kana($request->cond_title,"KVC");
         if ($cond_title != '') {
-          // $collection1 = News::where("title", "LIKE", '%'.mb_convert_kana($cond_title,"KVC").'%')->orderBy('created_at','desc')->get();
-          // $collection2 = News::where("title", "LIKE", '%'.mb_convert_kana($cond_title,"KVc").'%')->orderBy('created_at','desc')->get();
-          
-          // $posts = $collection1->merge($collection2)->all();
 
-          $posts = News::where('title','LIKE','%'.$cond_title.'%')->orWhere('title','LIKE','%'.$kana_title.'%')->orderBy('created_at','desc')->paginate(5);
+          //reqestを曖昧検索、KVCを曖昧検索、KVcを曖昧検索、新着順に並べる
+          $posts = News::where('title','LIKE','%'.$cond_title.'%')
+                          ->orWhere('title','LIKE','%'.$kana_title.'%')
+                          ->orWhere('title','LIKE','%'.$katakana_title.'%')
+                          ->orderBy('created_at','desc')->paginate(5);
         }else {
           $posts = News::orderBy('created_at','desc')->paginate(5);
         }
+        
 //最新投稿の表記を変える
         if(count($posts) > 0){
           $headline = $posts->shift();

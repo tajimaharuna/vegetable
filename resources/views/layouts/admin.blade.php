@@ -36,8 +36,8 @@
                     </button>
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                       <a href="{{ url('/') }}">
-                        <img src="https://tajimaharuna-vegetable.s3.us-east-2.amazonaws.com/logo_transparent.png" href="{{ url('/') }}">
+                       <a class="nav logo"href="{{ url('/') }}">
+                        <img src="https://tajimaharuna-vegetable.s3.us-east-2.amazonaws.com/logo_transparent.png">
 			         　</a>
 			         　<ul class="nav navbar-link">
 				        <li><a class="menu" href="/admin/news">投稿一覧</a></li>
@@ -47,7 +47,6 @@
                         
                         <!-- Left Side Of Navbar -->
                         <ul class="navbar-nav mr-auto">
-
                         </ul>
 
                         <!-- Right Side Of Navbar -->

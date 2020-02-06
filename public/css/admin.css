@@ -5,13 +5,23 @@ body {
   color: #000;
 }
 
+.navbar_register {
+  background-color: #ffc489;
+}
+
 .navbar-laravel {
   background-color: #ffc489;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+  height: 80px;
 }
 
 .navbar-brand {
   color: #fff !important;
+  width: 70%;
+}
+
+.navbar-brand img {
+  width: 70px;
 }
 
 .navbar-collapse img {

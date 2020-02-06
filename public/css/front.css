@@ -102,7 +102,8 @@ body {
 #nav-content ul {
   list-style: none;
   margin: 20px;
-  font-size: 15px;
+  font-size: 17px;
+  font-family: "Yu Gothic", "\6E38\30B4\30B7\30C3\30AF", YuGothic, "\6E38\30B4\30B7\30C3\30AF\4F53";
 }
 
 #nav-content li {
@@ -136,8 +137,16 @@ body {
   height: 80px;
 }
 
+/*ロゴ*/
+
 .navbar-brand img {
   width: 10%;
+}
+
+/*ログインボタン*/
+
+.nuvbar-nav {
+  list-style: none;
 }
 
 /* top画像と白黒テキスト*/

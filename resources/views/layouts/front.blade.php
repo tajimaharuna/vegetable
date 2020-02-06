@@ -34,9 +34,6 @@
                         <img src="https://tajimaharuna-vegetable.s3.us-east-2.amazonaws.com/logo_transparent.png"></a>
 			           </ul>
                     <div class="collapse navbar-collapse" id="navbarSupportContent">
-                        <ul class="navbar-nav mr-auto">
-                            
-                        </ul> 
                         <ul class="nuvbar-nav ml-auto">
                         @guest
                             <li><a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a></li>

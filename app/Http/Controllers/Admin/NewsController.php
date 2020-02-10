@@ -46,14 +46,23 @@ class NewsController extends Controller
     
     public function index(Request $request)
     {
-    // 検索機能
-        $cond_title = $request->cond_title;
-      if ($cond_title != '') {
-          $posts = News::where('title','like','%'.$cond_title.'%')->where('user_id', Auth::user()->id)->orderBy('created_at','desc')->get();
-      } else {
-          $posts = News::orderBy('created_at','desc')->get();
-      }
-      
+  //postgreSQL対応の検索機能
+      $cond_title = $request->cond_title;
+       //ひらがなをカタカナに変換
+       $kana_title = mb_convert_kana($request->cond_title,"KVC");
+       //カタカナをひらがなに変換
+       $katakana_title = mb_convert_kana($request->cond_title,"KVc");
+        if ($cond_title != '') {
+
+          //reqestを曖昧検索、KVCを曖昧検索、KVcを曖昧検索
+          $posts = News::where('title','LIKE','%'.$cond_title.'%')
+                          ->orWhere('title','LIKE','%'.$kana_title.'%')
+                          ->orWhere('title','LIKE','%'.$katakana_title.'%')
+                          ->orderBy('created_at','desc')->paginate(5);
+        }else {
+          $posts = News::orderBy('created_at','desc')->paginate(5);
+        }
+
       return view('admin.news.index', ['posts' => $posts, 'cond_title' => $cond_title]);
     }
     
